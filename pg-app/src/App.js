@@ -8,13 +8,14 @@ import ViewPg from "./components/pgs/ViewPg/ViewPg";
 import UpdatePg from "./components/pgs/UpdatePg/UpdatePg";
 import ChatLogin from "./components/Chat/ChatLogin";
 import ChatRoom from "./components/Chat/ChatRoom";
+import Home from "./components/Home";
 
 let App=()=> {
   return (
     <>
     <NavBar/>
     <Routes>
-      <Route path={"/"} element={<Navigate to={"/home"}/>}/>
+      <Route exact path={"/"} element={<Home/>}/>
       <Route path={"/chat/login"} element={<ChatLogin/>}/>
       <Route path={"/chat/room"} element={<ChatRoom/>}/>
       <Route path={"/pg/list"} element={<PgList/>}/>
