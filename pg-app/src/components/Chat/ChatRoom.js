@@ -67,11 +67,11 @@ useEffect(()=>{
     >
       <div
         style={{
-          width: "45%",
-          height: "400px",
+          width: "100%",
+          height: "90vh",
           backgroudnColor: "blue",
           border: "2px solid ",
-          marginTop: "5%",
+          // marginTop: "5%",
         }}
       >
         <div
@@ -85,7 +85,7 @@ useEffect(()=>{
             backgroundColor: "#343a40",
           }}
         >
-          <h3>Chat Area</h3>
+          <h3 style={{color: "white"}}>Chat Area</h3>
         </div>
         <div
           className="chatArea"
@@ -107,7 +107,7 @@ useEffect(()=>{
             style={{
               width: "20%",
               height: "100%",
-              backgroundColor: "#0dcaf0",
+              backgroundColor: "#a366ff",
               color: "white",
               fontWeight: "700",
             }}

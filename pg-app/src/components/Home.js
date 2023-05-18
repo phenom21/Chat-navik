@@ -10,11 +10,11 @@ export default function Home() {
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "row",
-          backgroundColor: "#212529",
+          backgroundColor: "#b8f2e1",
           height: "91vh",
         }}
       >
-        <p
+        {/* <p
           style={{
             width: "50%",
             height: "80%",
@@ -29,17 +29,18 @@ export default function Home() {
         >
           <span style={{ color: "#1affff" }}>Navik-</span>
           Asset-Tracking
-        </p>
+        </p> */}
         <div style={{widht: "50%", display: "inline"}}>
           <Link
             to="/chat/login"
             style={{
-              color: "blue",
-              backgroundColor: "#1affff",
+              color: "white",
+              backgroundColor: "#a366ff",
               fontWeight: "600",
               // border: "1.4px solid blue",
-              borderRadius: "24px",
-              padding: "1vh 3vh",
+              borderRadius: "5px",
+              padding: "2vh 6vh",
+              marginLeft: "8%",
               textDecoration: "none",
               fontWeight: "600",
               marginRight: '5px'
@@ -50,12 +51,14 @@ export default function Home() {
           <Link
             to="/pg/list"
             style={{
-              color: "blue",
-              backgroundColor: "#1affff",
+              color: "white",
+              backgroundColor: "#a366ff",
               fontWeight: "600",
               // border: "1.4px solid blue",
-              borderRadius: "24px",
-              padding: "1vh 3vh",
+              marginLeft: "8%",
+              marginRight: "8%",
+              borderRadius: "5px",
+              padding: "2vh 6vh",
               textDecoration: "none",
               fontWeight: "600",
               marginRight: '5px'
@@ -73,6 +76,7 @@ export default function Home() {
               height: "80%",
               marginTop: "50px",
               borderRadius: "8%",
+              marginLeft: "8%"
             }}
           ></img>
         </span>

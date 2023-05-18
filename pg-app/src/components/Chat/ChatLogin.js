@@ -33,16 +33,18 @@ export default function ChatLogin() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          backgroundColor: "#b8f2e1",
+          height: "100vh"
         }}
       >
         <div
           style={{
-            backgroundColor: "#00ffff",
+            backgroundColor: "white",
             display: "flex",
             flexDirection: "column",
             width: "42%",
             alignItems: "center",
-            marginTop: "50px",
+            marginTop: "0px",
           }}
         >
           <div
@@ -50,7 +52,7 @@ export default function ChatLogin() {
               fontSize: "30px",
               fontWeight: "500",
               fontFamily: "cursive",
-              color: "blue",
+              color: "#a366ff",
               paddingTop: "30px",
               textDecoration: "underline",
               marginBottom: "0px",
@@ -69,7 +71,7 @@ export default function ChatLogin() {
           >
             <p
               style={{
-                color: "Blue",
+                color: "#a366ff",
                 fontSize: "20px",
                 fontWeight: "600",
                 paddingTop: "0px",
@@ -111,16 +113,18 @@ export default function ChatLogin() {
               type="submit"
               style={{
                 color: "white",
-                backgroundColor: " #0099ff",
+                backgroundColor: "#a366ff",
                 fontWeight: "600",
-                // border: "1.4px solid blue",
-                marginTop: "40px",
-                borderRadius: "24px",
                 width: "30%",
-                padding: "1vh 1vh",
+                // border: "1.4px solid blue",
+                marginLeft: "35%",
+                marginTop: "30px",
+                // marginRight: "8%",
+                borderRadius: "5px",
+                padding: "2vh 2vh",
                 textDecoration: "none",
                 fontWeight: "600",
-                marginLeft: "130px",
+                // marginRight: '5px'
               }}
             >
               Login

@@ -2,6 +2,8 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {useState} from "react";
 import Axios from "axios";
+import { Navigate } from "react-router-dom";
+
 let UpdatePg=()=>{
     const [pname,setpname]=useState("");
     const [paddress,setpaddress]=useState("");
@@ -9,6 +11,7 @@ let UpdatePg=()=>{
     const [oname,setoname]=useState("");
     const [oemail,setoemail]=useState("");
     const [ocontact,setocontact]=useState("");
+    
 
     const addToList=()=>{
         Axios.post("http://localhost:5000/update",
@@ -21,11 +24,12 @@ let UpdatePg=()=>{
             ocontact: ocontact,
         });
         alert("Updated your PG successfully!!")
+        // Navigate("/pg/list");
     };
 
     return(
     <>
-    <section className="add-pg p-3">
+    <section className="add-pg p-3" style={{backgroundColor: "#b8f2e1", height: "100vh "}}>
         <div className="container">
             <div className="row">
                 <div className="col">
@@ -68,8 +72,30 @@ let UpdatePg=()=>{
                             }} className="form-control" placeholder="Owner Contact Number"/>
                         </div>
                         <div className="mb-2">
-                            <input type="submit" onClick={addToList} className="btn btn-primary" value="Update"/>
-                            <Link to={"/pg/list"} className="btn btn-dark ms-2">Home</Link>
+                            <input type="submit" onClick={addToList} className="btn btn-primary" value="Update" style={{
+                            color: "white",
+                            backgroundColor: "#a366ff",
+                            fontWeight: "600",
+                            // border: "1.4px solid blue",
+                            borderRadius: "5px",
+                            padding: "2vh 6vh",
+                            // marginLeft: "8%",
+                            textDecoration: "none",
+                            fontWeight: "600",
+                            marginRight: "5px",
+                          }}/>
+                            <Link to={"/pg/list"} className="btn btn-dark ms-2"  style={{
+                            color: "white",
+                            backgroundColor: "#a366ff",
+                            fontWeight: "600",
+                            // border: "1.4px solid blue",
+                            borderRadius: "5px",
+                            padding: "2vh 6vh",
+                            // marginLeft: "8%",
+                            textDecoration: "none",
+                            fontWeight: "600",
+                            marginRight: "5px",
+                          }}>Back</Link>
                         </div>
                     </form>
                 </div>
